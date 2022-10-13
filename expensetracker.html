@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense tracker</title>
+    <link rel="stylesheet" href="expense tracker.css">
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2017/06/09/15/14/dollar-2387088__480.jpg" alt="img" id="tim" >
+    <img src="https://media.istockphoto.com/photos/return-on-investment-cash-back-money-refund-concepts-picture-id1184974165?k=20&m=1184974165&s=612x612&w=0&h=yY4cTEYc6JSd0vKMs-PgtlPC5sJEK2RbUIccPtigbFE=" alt="img"  id="tilt">
+    
+    <div class="container">
+    <h1><i> TRACK YOUR DAILY EXPENSES</i></i></h1>
+    <H2>manage your exepense</H2>
+    <h3>save  your money</h3>
+
+    
+<form action="#" id="form">
+    <label for="amount">Amount</label><br><br>
+    <input type="text" name="amount"  id="cash"  placeholder="Amount"><br><br>
+    <label for="card">method of payment</label><br><br>
+    <input type="text" list="cards" name="card" id="payment" placeholder="method"><br><br>
+    <datalist id="cards">
+      <option value="debit card">
+      <option value="credit card">
+      <option value="UPI">
+      <option value="other">
+      </datalist>
+    <label for="exp">expense type</label><br><br>
+    <input type="text" list="exepense" name="exp" id="expense" placeholder="expense type"><br><br>
+    <datalist id="exepense">
+      <option value="fuel">
+      <option value="groceries">
+      <option value="entertainment">
+      <option value="food">
+      <option value="other">
+      </datalist>
+   <label for="des">description</label><br><br>
+    <input type="text"   name="des" id="desc" placeholder="description"><br><br><br><br>
+      <button  id="btn">Save</button> <br><br><br>
+    <table id="tex">
+      <thead>
+    <tr>
+        <th>Amount</th> 
+        <th>Method</th>
+        <th>Expense type</th>
+        <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody id="boat">
+  </tbody>
+</table>
+</form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="exepense tracker.js"></script>
+</body>
+</html>
